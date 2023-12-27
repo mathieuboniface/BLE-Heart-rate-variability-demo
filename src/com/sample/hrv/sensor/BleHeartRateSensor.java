@@ -68,7 +68,7 @@ public class BleHeartRateSensor extends BleSensor<float[]> {
     public boolean onCharacteristicRead(BluetoothGattCharacteristic c) {
         super.onCharacteristicRead(c);
 
-        Log.d(TAG, "onCharacteristicsReas");
+        Log.d(TAG, "onCharacteristicsRead");
         
         if ( !c.getUuid().toString().equals(UUID_SENSOR_BODY_LOCATION) )
             return false;
